@@ -9,42 +9,48 @@
   </head>
   <body>
     <div class="container">
-      <div class="input-div">
-        <h1>Choose your pizza</h1>
-        <form id="formPizza">
-          <div class="form-group">
-            <label for="size">Size</label>
-            <div class="drop-down">
-              <select class="form-control" id="size">
-                <option>Small</option>
-                <option>Medium</option>
-                <option>Large</option>
-              </select>
-            </div>
-          </div>
-          <div class="new-toppings">
-            <div class="new-topping">
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="input-div">
+            <h1>Choose your pizza</h1>
+            <form id="formPizza">
               <div class="form-group">
-                <label for="topping">Topping</label>
+                <label for="size">Size</label>
                 <div class="drop-down">
-                  <select class="form-control" id="topping">
-                    <option>cheese</option>
-                    <option>pepperoni</option>
-                    <option>artichoke</option>
-                    <option>anchovy</option>
+                  <select class="form-control" id="size">
+                    <option>Small</option>
+                    <option>Medium</option>
+                    <option>Large</option>
                   </select>
                 </div>
               </div>
-            </div>
+              <div class="new-toppings">
+                <div class="new-topping">
+                  <div class="form-group">
+                    <label for="topping">Topping</label>
+                    <div class="drop-down">
+                      <select class="form-control" id="topping">
+                        <option>cheese</option>
+                        <option>pepperoni</option>
+                        <option>artichoke</option>
+                        <option>anchovy</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button id="btn-cost" type="submit" class="btn">get the cost</button>
+              <span id="add-topping" class="btn">add another topping</span>
+            </form>
           </div>
-          <button id="btn-cost" type="submit" class="btn">get the cost</button>
-          <span id="add-topping" class="btn">add another topping</span>
-        </form>
-      </div>
-      <div class="result">
-        <h1>Your order:</h1>
-        <p><span id="result-size"></span> <span id="result-toppings"></span> pizza</p>
-        <p id="result-cost"></p>
+        </div>
+        <div class="col-sm-6">
+          <div class="result">
+            <h1>Your order:</h1>
+            <p><span id="result-size"></span> <span id="result-toppings"></span> pizza</p>
+            <p id="result-cost"></p>
+          </div>
+        </div>
       </div>
     </div>
   </body>

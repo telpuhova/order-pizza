@@ -24,8 +24,7 @@ Pizza.prototype.getCost = function() {
 $(document).ready(function() {
 
   $("#add-topping").click(function() {
-    alert("1");
-    $(".new-toppings").append('<div class="new-topping">' + '<div class="form-group">' + '<label for="topping">Topping</label>' + '<div class="drop-down">' + '<select class="form-control" id="topping">' + '<option>cheese</option>' + '<option>pepperoni</option>' + '<option>artichoke</option>' + '<option>anchovy</option>' + '</select>' + '</div>' + '</div>' + '</div>');
+    $(".new-toppings").append('<div class="new-topping toremove">' + '<div class="form-group">' + '<label for="topping">Topping</label>' + '<div class="drop-down">' + '<select class="form-control" id="topping">' + '<option>cheese</option>' + '<option>pepperoni</option>' + '<option>artichoke</option>' + '<option>anchovy</option>' + '</select>' + '</div>' + '</div>' + '</div>');
   });
 
   $("#formPizza").submit(function(event) {
@@ -41,5 +40,8 @@ $(document).ready(function() {
     $("#result-size").text(newPizza.size);
     $("#result-toppings").text(newPizza.toppings);
     $("#result-cost").text("$" + newPizza.cost);
+
+    $(".toremove").remove();
+    resetFields();
   });
 });
