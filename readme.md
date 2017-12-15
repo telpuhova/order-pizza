@@ -8,6 +8,8 @@ By **telpuhova**
 
 _Web application that takes input from a user and returns a price for the chosen pizza._
 
+https://telpuhova.github.io/order-pizza/
+
 ### Specs
 | Behavior | Input | Output |
 | :------------- | :------------- | :------------- |
