@@ -10,9 +10,12 @@ _Web application that takes input from a user and returns a price for the chosen
 
 ### Specs
 | Behavior | Input | Output |
-| :-------------     | :------------- | :------------- |
-| - | - | - |
-
+| :------------- | :------------- | :------------- |
+| Default size and default (cheapest) topping | Small; cheese | 9 |
+| Default size and expensive topping | Small; pepperoni | 10 |
+| Medium size and cheapest topping | Medium; cheese | 11 |
+| Large size and cheapest topping | Large; cheese | 13 |
+| Default size and multiple toppings | Small; cheese, pepperoni, anchovy | 13 |
 
 
 ## Setup
