@@ -18,7 +18,10 @@ Pizza.prototype.getCost = function() {
       this.cost += 2;
     }
   }
+};
 
+Pizza.prototype.getStrToppings = function () {
+  return this.toppings.join(", ");
 };
 
 $(document).ready(function() {
@@ -38,9 +41,10 @@ $(document).ready(function() {
     var newPizza = new Pizza(size, toppings)
     newPizza.getCost();
     $("#result-size").text(newPizza.size);
-    $("#result-toppings").text(newPizza.toppings);
+    $("#result-toppings").text(newPizza.getStrToppings());
     $("#result-cost").text("$" + newPizza.cost);
 
+    $(".result").show();
     $(".toremove").remove();
     resetFields();
   });
