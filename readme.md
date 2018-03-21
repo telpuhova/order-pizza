@@ -1,12 +1,12 @@
 # Order pizza
 
- _website for ordering pizza, 12/15/2017_
+website for ordering pizza, 12/15/2017
 
-By **telpuhova**
+By Natalia Telpukhova
 
 ## Description
 
-_Web application that takes input from a user and returns a price for the chosen pizza._
+Web application that takes input from a user and returns a price for the chosen pizza.
 
 https://telpuhova.github.io/order-pizza/
 
@@ -22,11 +22,11 @@ https://telpuhova.github.io/order-pizza/
 
 ## Setup
 
-* _clone repository_
-* _open index.html in browser_
+* clone repository
+* open index.html in browser
 
 ## Technologies Used
 
-_HTML, CSS, JS, Bootstrap, jquery_
+HTML, CSS, JS, Bootstrap, jquery
 
-Copyright (c) 2017 **telpuhova**
+Copyright (c) 2017 Natalia Telpukhova
